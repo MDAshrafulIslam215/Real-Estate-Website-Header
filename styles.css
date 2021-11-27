@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+:root{
+    --green:rgba(42, 42, 81, 1);
+    --black:rgba(42, 42, 81, 1);
+    --light-color:rgba(42, 42, 81, 1);
+    --box-shadow:0 .5rem 1.5rem rgba(232, 232, 232, 1);
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border:none;
+    text-transform: capitalize;
+    transition: all 0s linear;
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding:2rem 7%;
+}
+
+section:nth-child(even){
+    background:rgba(245, 245, 255, 1);
+}
+
+
+
+header{
+    position: fixed;
+    top:0; left: 0; right:0;
+    background: rgba(245, 245, 255, 1);
+    padding:1rem 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+
+/*
+#menu-bars{
+  display: none;
+}
+*/
+
+
+
+header .logo{
+    color:var(--black);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+
+header .logo i{
+    color:var(--green);
+}
+
+header .navbar a{
+    font-size: 1.6rem;
+    border-radius: 0rem;
+    padding:.8rem 1.2rem;
+    color:var(--light-color);
+}
+
+header .navbar a.active,
+header .navbar a:hover{
+    color:rgba(244, 244, 244, 1);
+    background: var(--green);
+}
+
+
+header .icons i,
+header .icons a{
+    cursor: pointer;
+    margin-left: .5rem;
+    height:4.5rem;
+    line-height: 4.5rem;
+    width:4.5rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color:var(--black);
+    border-radius: 50%;
+    background: rgba(244, 244, 244, 1);
+}
+
+header .icons i:hover,
+header .icons a:hover{
+    color:rgba(244, 244, 244, 1);
+    background: var(--green);
+    transform: rotate(360deg);
+}
+
+header .icons #menu-bars{
+    display: none;
+}
+
+
+
+
+
+.home .home-slider .slide{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem; 
+    padding-top: 12rem;
+}
+
+.home .home-slider .slide .content{
+    flex:1 1 45rem;
+}
+
+.home .home-slider .slide .image{
+    flex:1000 1 45rem;
+}
+
+.home .home-slider .slide .image img{
+    width: 100%;
+}
+
+.home .home-slider .slide .content span{
+    color:var(--green);
+    font-size: 2.5rem;
+}
+
+.home .home-slider .slide .content h3{
+    color:var(--black);
+    font-size: 5rem;
+}
+
+.home .home-slider .slide .content p{
+    color:var(--light-color);
+    font-size: 1.7rem;
+    padding:.5rem 0;
+    line-height: 2 ;
+}
+
+.home .home-slider .slide .content h{
+    
+    color:var(--light-color);
+    font-size: 2.2rem;
+    padding:.5rem 0;
+    line-height: 2 ;
+    
+}
+
+
+
+
+
+
+
+  
